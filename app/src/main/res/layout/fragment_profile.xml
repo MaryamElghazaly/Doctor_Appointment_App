@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Activity.ui.ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Title TextView -->
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doctor Profile"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/purble"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Back button -->
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/back_white"
+            android:contentDescription="Back button"
+            app:tint="@color/purble"
+            app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintTop_toBottomOf="@id/btnBack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="10dp">
+
+            <!-- Doctor Name -->
+            <EditText
+                android:id="@+id/editDoctorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Doctor Name"
+                android:padding="16dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/lightpurble"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/white"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <!-- Specialization -->
+            <EditText
+                android:id="@+id/editSpecialization"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Specialization"
+                android:padding="16dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/lightpurble"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/white"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <!-- Experience -->
+            <EditText
+                android:id="@+id/editExperience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Experience (Years)"
+                android:maxLength="2"
+                android:inputType="number"
+                android:padding="16dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/lightpurble"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/white"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <!-- Fees -->
+            <EditText
+                android:id="@+id/editFees"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fees"
+                android:padding="16dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/lightpurble"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/white"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <!-- Address -->
+            <EditText
+                android:id="@+id/editDoctorAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:padding="16dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/lightpurble"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/white"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editDoctorMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile"
+                android:maxLength="11"
+                android:padding="16dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/lightpurble"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/white"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <!-- Save Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSaveDoctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Doctor"
+                android:textAllCaps="false"
+                android:padding="12dp"
+                app:cornerRadius="16dp"
+                app:backgroundTint="@color/purble"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginBottom="16dp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

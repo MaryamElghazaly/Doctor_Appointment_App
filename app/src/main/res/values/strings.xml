@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MyApplicationDc</string>
+    <string name="title_activity_doctor_dashboard">Doctor_Dashboard</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="get_started_text">Show your\n responsibility\n towards society</string>
+    <string name="forgot_password_msg">Don\'t worry! it happens. Please enter the email address associated with your account.</string>
+    <string name="on_submit_msg">Check out your mailbox, you will receive an email containing link where you can reset your password</string>
+    <string name="default_web_client_id">368433668927-7t60hhdjf74l0cujs1sjiclu2ljvicku.apps.googleusercontent.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

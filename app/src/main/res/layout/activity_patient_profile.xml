@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Activity.Profile.patientProfile">
+
+    <!-- Back button -->
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical"
+        android:layout_marginStart="16dp"
+        app:srcCompat="@drawable/back"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Profile Layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/btnBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Patient Profile Title -->
+            <TextView
+                android:id="@+id/textViewProfileTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:text="Patient Profile"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="@color/purble" />
+
+            <!-- Patient Name Label and EditText -->
+            <TextView
+                android:id="@+id/textViewPatientName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/purble"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/editPatientName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Patient Name"
+                android:padding="12dp"
+                android:background="@color/lightpurble"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <!-- Age Label and EditText -->
+            <TextView
+                android:id="@+id/textViewPatientAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/purble"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/editPatientAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Patient Age"
+                android:inputType="number"
+                android:padding="12dp"
+                android:background="@color/lightpurble"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <!-- Medical History Label and EditText -->
+            <TextView
+                android:id="@+id/textViewMedicalHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medical History"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/purble"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/editMedicalHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Medical History"
+                android:padding="12dp"
+                android:background="@color/lightpurble"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <!-- Address Label and EditText -->
+            <TextView
+                android:id="@+id/textViewAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/purble"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/edit_pationt_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Patient Address"
+                android:padding="12dp"
+                android:background="@color/lightpurble"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <!-- Mobile Label and EditText -->
+            <TextView
+                android:id="@+id/textViewMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/purble"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/edit_pationt_Mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number"
+                android:maxLength="11"
+                android:inputType="phone"
+                android:padding="12dp"
+                android:background="@color/lightpurble"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <!-- Gender Label and Spinner -->
+            <TextView
+                android:id="@+id/textViewGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/purble"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp" />
+
+            <Spinner
+                android:id="@+id/spinnerGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Save Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSavePatient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Patient"
+                android:textAllCaps="false"
+                android:padding="12dp"
+                app:cornerRadius="16dp"
+                app:backgroundTint="@color/purble"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/doctorinput"
+    android:padding="16dp"
+    tools:context=".Activity.Profile.DoctorProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="-165dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Doctor Profile"
+                android:textColor="#968EB4"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editDoctorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_edittext_background"
+                android:hint="Doctor Name"
+                android:padding="12dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="#A47182"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Address -->
+            <EditText
+                android:id="@+id/editDoctorAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_edittext_background"
+                android:hint="Address"
+                android:padding="12dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="#A47182"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Experience -->
+            <EditText
+                android:id="@+id/editDoctorExperience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_edittext_background"
+                android:hint="Experience (in years)"
+                android:maxLength="2"
+                android:inputType="number"
+                android:padding="12dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="#A47182"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/editDoctorBiographysite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_edittext_background"
+                android:hint="Biographysite"
+                android:padding="12dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="#A47182"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Location -->
+            <EditText
+                android:id="@+id/editDoctorLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_edittext_background"
+                android:hint="Location"
+                android:padding="12dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="#A47182"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Mobile -->
+            <EditText
+                android:id="@+id/editDoctorMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_edittext_background"
+                android:hint="Mobile Number"
+                android:maxLength="11"
+                android:inputType="phone"
+                android:padding="12dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="#A47182"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Website -->
+            <EditText
+                android:id="@+id/editDoctorSite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_edittext_background"
+                android:hint="Website"
+                android:padding="12dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="#A47182"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Specialization"
+                android:textColor="#968EB4"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerSpecialization"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnUploadDoctorImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Upload Doctor Image"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    app:backgroundTint="#948CB2" />
+
+                <ImageView
+                    android:id="@+id/imageViewDoctor"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginBottom="10dp"
+                    android:contentDescription="Doctor Image"
+                    android:visibility="gone" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSaveDoctor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Save Doctor"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    app:backgroundTint="#958DB3" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
